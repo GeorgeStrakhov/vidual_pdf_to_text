@@ -1,4 +1,4 @@
-# PDF Slide Analyzer
+# Visual Slide to Text Converter
 
 A tool that converts PDF presentations into detailed text descriptions, making them suitable for analysis by Large Language Models (LLMs). It processes each slide individually, extracting all visual information, data points, charts, and text into comprehensive textual descriptions.
 
@@ -43,7 +43,9 @@ python main.py path/to/slides.pdf --output-dir custom_output
 python main.py path/to/slides.pdf --start-slide 5
 ```
 
-# Optionally convert back into PDF with only text, but maintaining slide numbers (so taht an agent can reference correct slides later after RAG ingestion)
+# Optionally convert back into PDF for RAG
+
+With only text, but maintaining slide numbers (so taht an agent can reference correct slides later after RAG ingestion)
 ```
 python create_slides.py output/slides.txt --output presentation.pdf
 ```
